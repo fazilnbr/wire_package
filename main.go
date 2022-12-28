@@ -6,11 +6,15 @@ import "fmt"
 
 func main() {
 	fmt.Print("\n\n--welcome to fazilnbr's wire_package repostiory--\n\n\n\n")
+
 	m := newMessage("You Are Awsome")
 	g := newGreeter(m)
 	e := newEvent(g)
-	str := e.start()
-	fmt.Printf("Output : %s\n\n\n\nProgram Ended..\n", str)
+
+	e.start()
+
+	fmt.Println("\nProgram Ended..")
+
 }
 
 // Initialize the struct, struct methord and it's constructors with depentancies
@@ -55,6 +59,6 @@ func newEvent(g greeter) event {
 	return event{greeter: g}
 }
 
-func (e event) start() string {
-	return e.greeter.greet()
+func (e event) start() {
+	fmt.Printf("Output : %s\n\n\n", e.greeter.greet())
 }
