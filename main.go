@@ -7,7 +7,9 @@ import "fmt"
 func main() {
 	fmt.Print("\n\n--welcome to fazilnbr's wire_package repostiory--\n\n\n\n")
 
-	e := initializeEvent()
+	msg := "You Are Awsome"
+
+	e := initializeEvent(msg)
 
 	e.start()
 
