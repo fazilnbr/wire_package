@@ -10,7 +10,7 @@ func main() {
 	g := newGreeter(m)
 	e := newEvent(g)
 	str := e.start()
-	fmt.Printf("Output : %s\n\n\n\nEnd..\n", str)
+	fmt.Printf("Output : %s\n\n\n\nProgram Ended..\n", str)
 }
 
 // Initialize the struct, struct methord and it's constructors with depentancies
